@@ -1,0 +1,21 @@
+﻿<div class="row">
+    <div class="span10">
+        <h2>Courses</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="span10">
+        <table class="table table-bordered table-hover">
+            <tr>
+                <th>Code</th>
+                <th>Course</th>
+                <th>Instructor</th>
+            </tr>
+            <tr ng-repeat="course in courses">
+                <td>{{course.code}}</td>
+                <td>{{course.name}}</td>
+                <td>{{course.instructor}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿@model ExampleAngularJs.Models.Registrations.Registration
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section JavascriptHeader
+{
+    <script src="~/app/Courses/courses-controller.js"></script>
+    <script src="~/app/Students/students-controller.js"></script>
+    <script type="text/javascript">
+        app.factory('bootstrappedData', function() {
+            return {
+                courses: @Html.Raw(Model.Courses),
+                students: @Html.Raw(Model.Students)
+            };
+        });
+    </script>
+}
+
+<div class="container" >
+    <div ng-view></div>
+</div>
+
