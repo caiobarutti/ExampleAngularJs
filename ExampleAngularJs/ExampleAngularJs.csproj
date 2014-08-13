@@ -106,6 +106,7 @@
     <Content Include="app\app.js" />
     <Content Include="app\Students\students-controller.js" />
     <Content Include="templates\Courses\courses.html" />
+    <Content Include="templates\Footer\about.html" />
     <Content Include="templates\Students\students.html" />
     <Content Include="Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
